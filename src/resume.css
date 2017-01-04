@@ -1,6 +1,26 @@
-h1, h2, h3, h4, h5, h6, p, a, li, span {
+h1, h2, h3, h4, h5, h6, p, li {
   font-family: 'Raleway', sans-serif;
 }
+
+a {
+  font-family: 'Raleway', sans-serif;
+  font-size:14px;
+  text-decoration:none;
+  color:black;
+
+}
+
+a:hover {
+  color: #1a8dff;
+}
+
+strong {
+  color: #1a8dff;
+}
+
+
+
+
 
 .resume {
   background-color: #1f1f1f;
@@ -8,7 +28,7 @@ h1, h2, h3, h4, h5, h6, p, a, li, span {
 }
 .resume .main {
   height: 100%;
-  width: 700px;
+  width: 750px;
   background-color: #fff;
   padding: 0 25px;
   margin: 0 auto;
@@ -34,7 +54,7 @@ h1, h2, h3, h4, h5, h6, p, a, li, span {
 .resume .main .header .header-icons {
   text-align: center;
 }
-.resume .main .header .header-icons .page-subhead {
+.resume .main .header .header-icons .page-subhead { 
   margin: 1rem 15px;
   display: inline;
 }
@@ -57,13 +77,20 @@ h1, h2, h3, h4, h5, h6, p, a, li, span {
 .resume .main .category-row .category-row-title {
   margin: 0.4rem 0;
 }
-
 .resume .main .category-row .category-title,
-.resume .main .category-row .category-subtitle {
+.resume .main .category-row .category-subtitle,
+.resume .main .category-row .category-date {
   display: inline;
   margin-top: 10px;
   margin-bottom: 5px;
 }
+
+.resume .main .category-row .skill-item {
+  display: inline;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
 
 .resume .main .category-row .category-bullets {
   margin-top: 5px;
@@ -72,20 +99,13 @@ h1, h2, h3, h4, h5, h6, p, a, li, span {
 .resume .main .category-row li {
   font-size: smaller;
 }
-
 sidebar-category:last-of-type .category {
   border-bottom: 0 !important;
   padding-bottom: 0 !important;
   margin-bottom: 0 !important;
 }
-
 category:last-of-type category-item:last-of-type .category {
   border-bottom: 0 !important;
   padding-bottom: 0 !important;
   margin-bottom: 0 !important;
-}
-
-a.page-subhead {
-  color: initial;
-  text-decoration: none;
 }
