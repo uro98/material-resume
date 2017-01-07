@@ -1,8 +1,8 @@
 # Material Resume
 
-## Original: [Demo](http://rdel.io/material-resume)
+### Original Material Resume: [Demo](http://rdel.io/material-resume)
 <br>
-## Updated: [Demo](http://kabirvirji.com/material-resume)
+## Updated: [Demo](http://kabirvirji.com/material-resume/material-resume.html)
 
 ## Updates:
 
