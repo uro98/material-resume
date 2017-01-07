@@ -1,8 +1,8 @@
 # Material Resume
 
-### Original Material Resume: [Demo](http://rdel.io/material-resume)
-<br>
-## Updated: [Demo](http://kabirvirji.com/material-resume/material-resume.html)
+## Updated Material Resume: [Demo](http://kabirvirji.com/material-resume/material-resume.html)
+
+## My version of the classic Taylor Swift material resume example. 
 
 ## Updates:
 
@@ -11,6 +11,9 @@
 3. Header contact information includes links, put links in the JavaScript under `resumeHeading` and `header-icons`
 4. Last line can be used for interests, awards, etc.
 
+
+### Original Material Resume: [Demo](http://rdel.io/material-resume)
+<br>
 ## Getting Started
 
 1. Download the [`index.html`](https://github.com/rrdelaney/material-resume/blob/gh-pages/index.html) file
