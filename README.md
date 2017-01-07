@@ -1,6 +1,15 @@
 # Material Resume
 
-## [Demo](http://rdel.io/material-resume)
+## Original: [Demo](http://rdel.io/material-resume)
+<br>
+## Updated: [Demo](http://kabirvirji.com/material-resume)
+
+## Updates:
+
+1. One column so recruiters have an easier time reading (more like scanning 🙄) your resume
+2. Splash of colour 🌈 words can be bolded blue to stand out with the `<strong>` tag
+3. Header contact information includes links, put links in the JavaScript under `resumeHeading` and `header-icons`
+4. Last line can be used for interests, awards, etc.
 
 ## Getting Started
 
