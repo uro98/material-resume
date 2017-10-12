@@ -25,13 +25,13 @@ angular.module('Resume', ['ngMaterial'])
     template: `<div class="header">
       <div class="page-title-container">
         <h2 class="page-title page-title-first">{{firstName}}</h2>
-        <h2 class="page-title page-title-last" style="color:#1a8dff;">{{lastName}}</h2>
+        <h2 class="page-title page-title-last">{{lastName}}</h2>
       </div>
       <div class="header-icons">
-        <span ng-if="website" class="md-subhead page-subhead"><a target="_blank" href="http://kanyewest.com" style="color:black"><i class="fa fa-lg fa-code"></i>{{website}}</a></span>
-        <span ng-if="email" class="md-subhead page-subhead"><a target="_blank" href="mailto:kanye@west.com" style="color:black;"><i class="fa fa-lg fa-envelope"></i>{{email}}</a></span>
-        <span ng-if="github" class="md-subhead page-subhead"><a target="_blank" href="http://github.com/kanyewest" style="color:black;"><i class="fa fa-lg fa-github"></i>{{github}}</a></span>
-        <span ng-if="linkedin" class="md-subhead page-subhead"><a md-theme="default" target="_blank" href="http://linkedin.com/in/kanyewest" style="color:black;"><i class="fa fa-lg fa-linkedin-square"></i>{{linkedin}}</a></span>
+        <span ng-if="website" class="md-subhead page-subhead"><a class="link" target="_blank" href="http://uro98.github.io" style="color:black"><i class="fa fa-lg fa-code"></i>{{website}}</a></span>
+        <span ng-if="email" class="md-subhead page-subhead"><a class="link" target="_blank" href="mailto:yujotseng@gmail.com" style="color:black;"><i class="fa fa-lg fa-envelope"></i>{{email}}</a></span>
+        <span ng-if="github" class="md-subhead page-subhead"><a class="link" target="_blank" href="http://github.com/uro98" style="color:black;"><i class="fa fa-lg fa-github"></i>{{github}}</a></span>
+        <span ng-if="linkedin" class="md-subhead page-subhead"><a class="link" md-theme="default" target="_blank" href="http://linkedin.com/in/yujotseng" style="color:black;"><i class="fa fa-lg fa-linkedin-square"></i>{{linkedin}}</a></span>
       </div>
     </div>`
   }
@@ -62,7 +62,7 @@ angular.module('Resume', ['ngMaterial'])
     transclude: true,
     template: `<div flex="" class="category-row">
       <div class="category">
-        <h5 class="category-row-title">{{name}}</h5> 
+        <h5 class="category-row-title">{{name}}</h5>
         <ng-transclude></ng-transclude>
       </div>
     </div>`
@@ -95,7 +95,7 @@ angular.module('Resume', ['ngMaterial'])
     template: `<div class="category">
         <h4 class="category-title md-body-2">{{title}}</h4>&nbsp;
         <h4 class="category-subtitle md-caption">{{subtitle}}</h4>
-        <h5 class="category-title md-body-2" style="float:right;">{{date}}</h5>
+        <h5 class="category-title md-body-2 category-date" style="float:right;">{{date}}</h5>
         <ul class="category-bullets" ng-transclude></ul>
     </div>`
   }
@@ -110,7 +110,7 @@ angular.module('Resume', ['ngMaterial'])
     },
     transclude: true,
     template: `<div class="category">
-        <h2 class="category-title md-body-2"><strong>Languages: </strong>{{languages}}</h2>&nbsp;
+        <h2 class="category-title md-body-2"><strong>Languages (familiar): </strong>{{languages}}</h2></br>
         <h2 class="category-title md-body-2"><strong>Technologies: </strong>{{technologies}}</h2>
         <ul class="category-bullets" ng-transclude></ul>
     </div>`

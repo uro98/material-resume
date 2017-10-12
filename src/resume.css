@@ -4,21 +4,23 @@ h1, h2, h3, h4, h5, h6, p, li {
 
 a {
   font-family: 'Raleway', sans-serif;
-  font-size:14px;
-  text-decoration:none;
-  color:black;
-
+  text-decoration: none;
+  color: black !important;
 }
 
 a:hover {
   color: #1a8dff;
 }
 
-strong {
+/*strong {
   color: #1a8dff;
+}*/
+
+.link {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  text-decoration: none;
 }
-
-
 
 
 
@@ -42,7 +44,7 @@ strong {
   padding-bottom: 10px;
 }
 .resume .main .header .page-title {
-  font-size: 48pt;
+  font-size: 45pt; /*48*/
   display: inline;
 }
 .resume .main .header .page-title-first {
@@ -54,7 +56,7 @@ strong {
 .resume .main .header .header-icons {
   text-align: center;
 }
-.resume .main .header .header-icons .page-subhead { 
+.resume .main .header .header-icons .page-subhead {
   margin: 1rem 15px;
   display: inline;
 }
@@ -67,22 +69,28 @@ strong {
 .resume .main .category-row {
   padding-bottom: 2px;
 }
-.resume .main .category-row .category {
+/*.resume .main .category-row .category {
   margin-right: 10px;
   padding-left: 5px;
   padding-right: 10px;
   border-bottom: 1px solid #ddd;
   border-right: 1px solid #ddd;
-}
+}*/
 .resume .main .category-row .category-row-title {
   margin: 0.4rem 0;
 }
 .resume .main .category-row .category-title,
-.resume .main .category-row .category-subtitle,
-.resume .main .category-row .category-date {
+.resume .main .category-row .category-subtitle {
   display: inline;
   margin-top: 10px;
   margin-bottom: 5px;
+}
+
+.resume .main .category-row .category-date {
+  display: inline;
+  margin: 0;
+  font-size: 12px;
+  color: #6c6c6c;
 }
 
 .resume .main .category-row .skill-item {
@@ -93,19 +101,20 @@ strong {
 
 
 .resume .main .category-row .category-bullets {
-  margin-top: 5px;
+  margin-top: 2px;
+  margin-bottom: 8px; /*10*/
 }
 .resume .main .category-row p,
 .resume .main .category-row li {
   font-size: smaller;
 }
-sidebar-category:last-of-type .category {
+/*sidebar-category:last-of-type .category {
   border-bottom: 0 !important;
   padding-bottom: 0 !important;
   margin-bottom: 0 !important;
-}
-category:last-of-type category-item:last-of-type .category {
+}*/
+/*category:last-of-type category-item:last-of-type .category {
   border-bottom: 0 !important;
   padding-bottom: 0 !important;
   margin-bottom: 0 !important;
-}
+}*/

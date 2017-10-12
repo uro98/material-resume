@@ -1,89 +1,98 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8">
-<title>Resume</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Raleway:500,200,700" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="resume.css">
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
-<script src="resume.js"></script>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500,200,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="src/resume.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+    <script src="src/resume.js"></script>
+  </head>
 
-</head><body ng-app="Resume" ng-cloak="">
+  <body ng-app="Resume" ng-cloak="">
     <resume>
-        <resume-heading first-name="Kabir" last-name="Virji" linkedin="kabirvirji" github="kabirvirji" email="kabirvirji@gmail.com" website="kabirvirji.com">
-        </resume-heading>
+      <resume-heading first-name="Yu Jo" last-name="Tseng" website="yujotseng.com" email="yujotseng@gmail.com" github="uro98" linkedin="yujotseng"></resume-heading>
+      <resume-body>
+        <resume-column flex="100">
 
-            <resume-column flex="800">
-                <category name="Education">
-                    <category-item title="University of Toronto" date="Expected 2019" subtitle="HBSc : Computer Science Specialist">
-                        <li>Software Design | Algorithm Analysis | Statistics | Data Structures | Systems Programming</li>
-                    </category-item>
-                </category>
+          <category name="Education">
+            <category-item title="University of Edinburgh" date="Sep 2016 - May 2020" subtitle="BSc Computer Science">
+              <li>Year 1 grade: 80%</li>
+              <li>Class rep</li>
+            </category-item>
+            <category-item title="International School Groningen" date="Sep 2014 - May 2016" subtitle="International Baccalaureate">
+              <li>Grade: 40/45</li>
+              <li>Courses: Mathematics HL | Physics SL | Chemistry SL | Biology HL | English A SL | Dutch B HL</li>
+            </category-item>
+          </category>
 
-                <category name="Skills">
-                    <skill-item languages="Python | JavaScript | Java | PHP | SQL" technologies="Git | HTML/CSS | MySQL | Node | Twig"></skill-item>
-                </category>
+          <category name="Personal Projects">
+            <category-item title="One Last Stroke" subtitle="" date="Oct 2017 - Present">
+              <li>Developing a multiplayer FPS game for Windows PC with Unity using C#.</li>
+              <li>Implementing a Splatoon-like game mechanic by writing a custom shader.</li>
+              <li>Making 3D models in Blender and using uNet for networking.</li>
+            </category-item>
+            <category-item title="Expense Logger" subtitle="" date="Aug 2017 - Oct 2017">
+              <li>Created an Android app to improve financial management using Java and Android Studio.</li>
+              <li>Stored expense data in an SQLite database and made charts using the MPAndroidChart library to visualize expense analyses.</li>
+              <!-- <li>Published on SlideMe at (not yet).</li> -->
+            </category-item>
+            <category-item title="Personal Website" subtitle="" date="Jul 2017 - Aug 2017">
+              <li>Built my own website to showcase my projects.</li>
+              <li>Used Bootstrap to make it fully responsive and added extra functionality with jQuery.</li>
+            </category-item>
+            <category-item title="Bohred Atoms" subtitle="" date="Dec 2016 - Feb 2017">
+              <li>Created a local multiplayer 2D shooter game for browsers and Windows PC using Unity and C#.</li>
+              <li>Implemented the scientific Bohr Model of the atom as a game object, the shooting mechanics, the 2D collision detection system
+                 and the game UI.</li>
+              <li>Published to itch.io at <a href="https://uro.itch.io/bohred-atoms">https://uro.itch.io/bohred-atoms</a>.</li>
+            </category-item>
+          </category>
 
-                <category name="Professional Experience">
-                    <category-item title="Software Development Intern" date="Summer 2016 - Current (part time)" subtitle="LemonStand 🍋">
-                        <li>LemonStand is an <strong>e-commerce</strong> platform dedicated to improving the online shopping experience for both customers and store owners</li>
-			            <li>Utilized <strong>PHP</strong> and Javascript to add a blog system to the LemonStand platform</li>
-                        <li>Developed an author biography for blogs using PHP and <strong>JavaScript</strong>, allowing store owners to<br> connect with their customers and <strong>increase</strong> sales</li>
-                        <li>Engineered theme features using JavaScript/HTML/CSS that resulted in <strong>2x</strong> themes being used</li>
-                        <li>Used PHP and <strong>JavaScript</strong> to add a feature allowing customers to opt-in to marketing during the<br> checkout process, allowing store owners to <strong>automate</strong> promotional email marketing</li>
-                        <li>Assited in developing and maintaining the LemonStand <strong>API</strong> in PHP</li>
-                        <li>Dealt with customer support on a <strong>technical</strong> and non-technical level</li>
+          <category name="Hackathons">
+            <category-item title="PlaceIt" subtitle="StudentHack V" date="Mar 2017">
+              <li>Worked in a team of four to develop a web-based chat game where users guess locations.</li>
+              <li>Used the Google Places API to get data about points of interest and randomized the chosen location.</li>
+            </category-item>
+            <category-item title="MySaber" subtitle="StacsHack III" date="Mar 2017">
+              <li>Worked in a team of four to create an Android app that can record audio, save it to a database and play it when the phone is swung.</li>
+              <li>Set up motion sensors and programmed the phone to load and play sounds when motion is detected.</li>
+            </category-item>
+          </category>
 
-  
-                        
-                    </category-item>
-                </category>
-                <category name="Projects">
-                    <category-item title="Spotify Messenger Bot" subtitle="Personal Project 2016">
-                        <li>Developed a Spotify Messenger Bot using the <strong>Spotify API</strong> for group music manipulation</li>
-                        <li>Utilized <strong>JavaScript</strong> and <strong>node.js</strong> for functionaliy and user input recognition</li>
-                    </category-item>
-                    <category-item title="Future Connect" subtitle="UofT Hackathon 2016">
-                        <li>Developed a web application that connects high school students with post-secondary mentors</li>
-                        <li>Utilized <strong>PHP</strong> to develop the back-end and JavaScript to develop the front-end</li>
-                    </category-item>
-                    <category-item title="TwitterBot" subtitle="Princeton Hackathon 2016">
-                        <li>Developed a Twitterbot to build a customizable tweet-auto-reply tool</li>
-                        <li>Used <strong>Python</strong>, the Twitter API, and several libraries such as APSchedular and Tweepy</li>
-                    </category-item>
-                </category>
+          <category name="Skills">
+            <skill-item languages="Java | C# | SQL | HTML/CSS" technologies="SQLite | MPAndroidChart | Unity | uNet | Bootstrap | Git"></skill-item>
+          </category>
 
+          <category name="Societies">
+            <category-item title="Embedded and Robotics Society" subtitle="Head Mentor" date="Sep 2017 - Present">
+              <li>Tutoring peers in electronics and robotics workshops.</li>
+            </category-item>
+            <category-item title="Game Development Society" subtitle="Events Coordinator" date="Mar 2017 - Present">
+              <li>Preparing for Game Jams and Socials and making sure they run smoothly.</li>
+            </category-item>
+          </category>
 
+          <!-- <category name="Activities">
+            <category-item title="Retirement Home" subtitle="Volunteer" date="Dec 2014 - Mar 2015">
+              <li>Preparing for Game Jams and Socials and making sure they run smoothly</li>
+            </category-item>
+            <category-item title="Model United Nations of Lübeck" subtitle="Delegate" date="June 2015">
+              <li>Tutoring peers in electronics and robotics workshops</li>
+            </category-item>
 
-                <category name="Volunteering and Activites">
+            <!-- <p>Game maker \ Game player \ Stargazer \ Mandarin speaker \ English speaker \ Taiwanese national \ Dutch national</p> --
+          </category> -->
 
-                    <category-item title="UofT Think Tank" subtitle="Founder and President" date="Fall 2015 - Current">
-                        <li>Founded a club that focuses on generating ideas to solve real world problems using <strong>CS</strong></li>
-                        <li>Organize bi-weekly meetings, and monthly <strong>workshops</strong> led by industry professionals</li>
-                    </category-item>
-
-
-                    <category-item title="Shad Valley" subtitle="Shad Fellow" date="Summer 2014">
-                        <li>Attended a month-long program at the University of Saskatchewan that focuses on <strong>engineering</strong>, entrepreneurship, and solving real world problems</li>
-                        <li>Exercised networking and <strong>problem solving</strong> skills through a series of activities and events</li>
-                        <li>Developed, <strong>prototyped</strong>, and pitched a product based around a centeral theme</li>
-
-                    </category-item>
-
-                    <p>Competitive Pokemon Trading Card Game Player \ <strong>Hackathon</strong> lover \ Kanye Fan \ From Vancouver and living in the 6ix</p>
-
-                </category>
-
-
-
-            </resume-column>
-        
+        </resume-column>
+      </resume-body>
     </resume>
-
-
-</body></html>
-
+  </body>
+</html>
