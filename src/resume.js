@@ -110,7 +110,7 @@ angular.module('Resume', ['ngMaterial'])
     },
     transclude: true,
     template: `<div class="category">
-        <h2 class="category-title md-body-2"><strong>Languages (familiar): </strong>{{languages}}</h2></br>
+        <h2 class="category-title md-body-2"><strong>Languages: </strong>{{languages}}</h2></br>
         <h2 class="category-title md-body-2"><strong>Technologies: </strong>{{technologies}}</h2>
         <ul class="category-bullets" ng-transclude></ul>
     </div>`
