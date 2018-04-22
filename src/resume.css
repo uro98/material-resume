@@ -42,7 +42,7 @@ a:hover {
   padding-bottom: 7px;
 }
 .resume .main .header .page-title {
-  font-size: 46pt; /*48*/
+  font-size: 33pt; /*48*/
   display: inline;
 }
 .resume .main .header .page-title-first {
@@ -76,6 +76,7 @@ a:hover {
 }*/
 .resume .main .category-row .category-row-title {
   margin: 0.4rem 0;
+  font-size: 1em;
 }
 .resume .main .category-row .category-title,
 .resume .main .category-row .category-subtitle {
