@@ -28,10 +28,10 @@ angular.module('Resume', ['ngMaterial'])
         <h2 class="page-title page-title-last">{{lastName}}</h2>
       </div>
       <div class="header-icons">
-        <span ng-if="website" class="md-subhead page-subhead"><a class="link" target="_blank" href="http://yujotseng.com/" style="color:black"><i class="fa fa-lg fa-code"></i>{{website}}</a></span>
+        <span ng-if="website" class="md-subhead page-subhead"><a class="link" target="_blank" href="https://yujotseng.com/" style="color:black"><i class="fa fa-lg fa-code"></i>{{website}}</a></span>
         <span ng-if="email" class="md-subhead page-subhead"><a class="link" target="_blank" href="mailto:yujotseng@gmail.com" style="color:black;"><i class="fa fa-lg fa-envelope"></i>{{email}}</a></span>
-        <span ng-if="github" class="md-subhead page-subhead"><a class="link" target="_blank" href="http://github.com/uro98" style="color:black;"><i class="fa fa-lg fa-github"></i>{{github}}</a></span>
-        <span ng-if="linkedin" class="md-subhead page-subhead"><a class="link" md-theme="default" target="_blank" href="http://linkedin.com/in/yujotseng" style="color:black;"><i class="fa fa-lg fa-linkedin-square"></i>{{linkedin}}</a></span>
+        <span ng-if="github" class="md-subhead page-subhead"><a class="link" target="_blank" href="https://github.com/uro98" style="color:black;"><i class="fa fa-lg fa-github"></i>{{github}}</a></span>
+        <span ng-if="linkedin" class="md-subhead page-subhead"><a class="link" md-theme="default" target="_blank" href="https://linkedin.com/in/yujotseng" style="color:black;"><i class="fa fa-lg fa-linkedin-square"></i>{{linkedin}}</a></span>
       </div>
     </div>`
   }
@@ -110,7 +110,7 @@ angular.module('Resume', ['ngMaterial'])
     },
     transclude: true,
     template: `<div class="category">
-        <h2 class="category-title md-body-2"><strong>Languages: </strong>{{languages}}</h2></br>
+        <h2 class="category-title md-body-2"><strong>Languages: </strong>{{languages}}</h2>&nbsp;&nbsp;&nbsp;
         <h2 class="category-title md-body-2"><strong>Technologies: </strong>{{technologies}}</h2>
         <ul class="category-bullets" ng-transclude></ul>
     </div>`

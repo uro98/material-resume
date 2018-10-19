@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:500,200,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Raleway:200,500,700|Roboto:300,400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="src/resume.css">
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
@@ -23,64 +23,66 @@
         <resume-column flex="100">
 
           <category name="Education">
-            <category-item title="University of Edinburgh" date="Sep 2016 - May 2020" subtitle="BSc Computer Science">
-              <li>Year 1 grade: 80%</li>
-              <li>Relevant courses: Processing Formal and Natural Languages | Algorithms, Data Structures, Learning | Reasoning and Agents</li>
-              <li>Class rep: Represented my class and communicated student feedback to the University.</li>
-            </category-item>
-            <category-item title="International School Groningen" date="Sep 2014 - May 2016" subtitle="International Baccalaureate">
-              <li>Grade: 40/45</li>
-              <li>Courses: Mathematics | Physics | Chemistry | Biology | English | Dutch</li>
+            <category-item title="University of Edinburgh" date="Sep 2016&ndash;May 2020" subtitle="BSc Computer Science">
+              <li>First-class honours expected</li>
+              <li>Course topics: Machine learning, language processing, vision, robotics, algorithms/data structures</li>
+              <li>Tutor: Leading tutorials for Introduction to Software Engineering</li>
+              <li>Class rep: Represented my class and communicated student feedback to the University</li>
             </category-item>
           </category>
 
-          <category name="Personal Projects">
-            <category-item title="One Last Stroke" subtitle="" date="Nov 2017 - Present">
+          <category name="Work Experience">
+            <category-item title="Administrate" date="Jun 2018&ndash;Aug 2018" subtitle="Software Engineer Intern">
+              <li>Worked in a team on the backend of the Training Management System using <strong>Python</strong> and <strong>SQLAlchemy</strong>.</li>
+              <li>Added functionality to the <strong>GraphQL API</strong> to improve the system as an integrable product.</li>
+              <li>Implemented security layers and fixed bugs to increase customer success and refactored legacy code for higher code maintainability.</li>
+              <li>Followed Test Driven Development and the Agile method.</li>
+            </category-item>
+          </category>
+
+          <category name="Projects">
+            <!-- <category-item title="One Last Stroke" subtitle="" date="Nov 2017 - Present">
               <li>Developing a multiplayer FPS game for Windows PC with <strong>Unity</strong> using <strong>C#</strong>.</li>
               <li>Implementing a painting game mechanic by writing a custom shader.</li>
               <li>Making 3D models in <strong>Blender</strong> and using <strong>uNet</strong> for networking.</li>
+            </category-item> -->
+            <!-- <category-item title="Party Buddy" subtitle="Amazon Early Insights Hackathon" date="Apr 2018">
+              <li>Created and demoed an Alexa skill that assists in party organisation using <strong>Flask-Ask</strong>, the <strong>Alexa Skills Kit</strong> and the <strong>Google Calendar API</strong>, in a team of three.</li>
+            </category-item> -->
+            <category-item title="Expense Logger" subtitle="" date="Aug 2017&ndash;Oct 2017">
+              <li>Built an Android app to improve personal financial management using <strong>Java</strong> and an <strong>SQLite</strong> database.</li>
+              <li>Made charts using the <strong>MPAndroidChart</strong> library to visualize expense analyses.</li>
+              <li>Accumulated over 400 downloads on SlideME at <a href="http://slideme.org/application/expense-logger" target="_blank">http://slideme.org/application/expense-logger</a>.</li>
             </category-item>
-            <category-item title="Expense Logger" subtitle="" date="Aug 2017 - Oct 2017">
-              <li>Created an Android app to improve financial management using <strong>Java</strong> and <strong>Android Studio</strong>.</li>
-              <li>Stored expense data in an <strong>SQLite</strong> database and made charts using the <strong>MPAndroidChart</strong> library to visualize expense analyses.</li>
-              <li>Released on SlideME at <a href="http://slideme.org/application/expense-logger" target="_blank">http://slideme.org/application/expense-logger</a>.</li>
-            </category-item>
-            <category-item title="Personal Website" subtitle="" date="Jul 2017 - Aug 2017">
-              <li>Designed and built my own website to showcase my projects.</li>
-              <li>Used <strong>Bootstrap</strong> to make it fully responsive and added extra functionality with <strong>jQuery</strong>.</li>
-            </category-item>
-            <category-item title="Bohred Atoms" subtitle="" date="Dec 2016 - Feb 2017">
+            <category-item title="Bohred Atoms" subtitle="" date="Dec 2016&ndash;Feb 2017">
               <li>Created a local multiplayer 2D shooter game for browsers and Windows PC using <strong>Unity</strong> and <strong>C#</strong>.</li>
-              <li>Implemented the scientific Bohr Model of the atom as a game object, the shooting mechanics, the 2D collision detection system
-                 and the game UI.</li>
+              <li>Implemented the game objects, shooting mechanics, collision detection system and game UI.</li>
               <li>Published to itch.io at <a href="https://uro.itch.io/bohred-atoms" target="_blank">https://uro.itch.io/bohred-atoms</a>.</li>
             </category-item>
           </category>
 
-          <category name="Hackathons">
-            <category-item title="Party Buddy" subtitle="Amazon Early Insights" date="Apr 2018">
-              <li>Worked in a team of three to build an Alexa skill for party organisation using <strong>Flask-Ask</strong> and the <strong>Alexa Skills Kit</strong>.</li>
-              <li>Created intents and connected to the Google Calendar <strong>API</strong> by <strong>pair programming</strong>.</li>
+          <category name="Extracurricular Activities">
+            <category-item title="FreshAir Radio Station" subtitle="Webmaster" date="Jul 2018&ndash;Present">
+              <li>Brought the University radio station back on-air after a 6-month downtime by configuring the servers and setting up the necessary applications under a tight deadline.</li>
+              <li>Maintaining and improving the <a href="https://freshair.org.uk/" target="_blank">website</a> built with <strong>Ruby on Rails</strong>, the broadcast control site supported by a <strong>Flask API</strong> and the audio streaming <strong>infrastructure</strong>.</li>
             </category-item>
-            <category-item title="NetSquare" subtitle="GreatUniHack" date="Nov 2017">
-              <li>Collaborated in a team of three to develop a visualized neural network where user input modifies its behaviour.</li>
-              <li>Created and trained the neural network to process and update its coordinates on the canvas using <strong>synaptic.js</strong>.</li>
+            <category-item title="Embedded and Robotics Society" subtitle="Partnership Manager" date="Sep 2017&ndash;Present">
+              <li>Mentoring in electronics and robotics workshops for 25 students on devices such as <strong>Arduinos</strong> and <strong>Micro Bits</strong>.</li>
+              <li>Co-organized the 24-hour hardware hackathon <a href="https://createdhack.github.io/" target="_blank">CreatED</a>, which was attended by around 100 students, and secured 5 sponsorships for it.</li>
             </category-item>
+            <category-item title="Google CodeU Program" subtitle="Participant" date="May 2018&ndash;Aug 2018">
+              <li>Solved various coding problems alone and with selected CS students from EMEA, with a focus on using industry best practices.</li>
+              <li>Reviewed other participants' code and received code reviews from a Google engineer.</li>
+              <li>Contributed to the group solution that was recognized as the best solution in <strong>Java</strong> by judges.</li>
+            </category-item>
+            <!-- <category-item title="Game Development Society" subtitle="Outreach &amp Social Media Coordinator" date="Sep 2017 - Present">
+              <li>Preparing for Game Jams and Socials and making sure they run smoothly.</li>
+            </category-item> -->
           </category>
 
           <category name="Skills">
-            <skill-item languages="Java, C#, Python, SQL, HTML/CSS" technologies="SQLite, MPAndroidChart, Unity, uNet, Bootstrap, Git"></skill-item>
-          </category>
-
-          <category name="Voluntary Experience">
-            <category-item title="Embedded and Robotics Society" subtitle="Head Mentor" date="Sep 2017 - Present">
-              <li>Tutoring peers in electronics and robotics workshops on devices such as <strong>Arduinos</strong> and <strong>Micro Bits</strong>.</li>
-              <li>Co-organized the 24-hour hardware hackathon <a href="https://createdhack.github.io/" target="_blank">CreatED</a> and secured sponsorships for it.</li>
-            </category-item>
-            <category-item title="Game Development Society" subtitle="Events Coordinator" date="Sep 2017 - Present">
-              <li>Preparing for Game Jams and Socials and making sure they run smoothly.</li>
-            </category-item>
-            <!-- <p>Game maker \ Game player \ Stargazer \ Mandarin speaker \ English speaker \ Taiwanese national \ Dutch national</p> -->
+            <!-- <skill-item languages="Java, Python, C#, Ruby, JavaScript, SQL, HTML/CSS" technologies="GraphQL, SQLAlchemy, SQLite, MySQL, Ruby on Rails, Unity, Bootstrap, Git"></skill-item> -->
+            <skill-item languages="Java, Python, SQL, HTML/CSS" technologies="GraphQL, SQLAlchemy, SQLite, Git, Unix/Linux, Unity"></skill-item>
           </category>
 
         </resume-column>
